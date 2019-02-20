@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="/resource/style/public.css">
+    <script src="/resource/script/config.js"></script>
+    <script src="/resource/lib/cooperate/Base.class.js"></script>
+    <script src="/resource/script/shim.js"></script>
+    <script>
+        /*function updateImg(id, imgId) {
+            if (imgId) {
+                coo.ajax(CONFIG.diApi('/api/blob/getData'), {
+                    data: {
+                        id: imgId,
+                    },
+                    success: res => {
+                        let img = res.data.data;
+                        if (img) {
+                            coo.query('.wrap' + id).src = img;
+                            coo.query('.litimg' + id).src = img;
+                        }
+                    }
+                })
+            }
+        }*/
+    </script>
+</head>
+<body>
+<!--公共模块-->
+<module entry="navbar" scope="global" class="p_dot"/>
+<module entry="background" scope="global"/>
+
+<div class="p_content p_dot">
+    <!--模块-->
+    <module entry="head"/>
+    <!--缩略模块-->
+    <module entry="screen"/>
+    <!--时间轴模块-->
+    <module entry="timeline"/>
+    <!--选择模块-->
+    <module entry="section"/>
+    <!--添加章-->
+    <module entry="chapter" class="hide"/>
+</div>
+<!--郭超DI-->
+<div class="gcDIBack hide">返回</div>
+<iframe src="" class="gcDIifr hide"></iframe>
+</body>
+</html>

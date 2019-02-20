@@ -1,0 +1,483 @@
+.orgInfo {
+    width: 1340px;
+    height: 824px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.orgInfo > .orgTop {
+    width: 100%;
+    height: 30px;
+}
+
+.orgInfo > .orgTop > .orgBtn_right {
+    width: 220px;
+    height: 30px;
+    float: left;
+}
+
+.orgInfo > .orgTop > .orgBtn_right > .addOn {
+    width: 140px;
+    height: 30px;
+    /*background: #EE9F3A;*/
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #5B9696;
+    box-sizing: border-box;
+}
+
+.orgInfo > .orgTop > .orgBtn_right > .addOn:hover {
+    background: #EE9F3A;
+    border: 1px solid #EE9F3A;
+    color: #000;
+}
+
+.orgInfo > .orgTop > .orgBtn_right > .cancel {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #5B9696;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+}
+
+.orgInfo > .orgTop > .orgBtn_right > .cancel:hover {
+    background: #EE9F3A;
+    border: 1px solid #EE9F3A;
+    color: #000;
+}
+
+.orgInfo > .orgTop > .search {
+    width: 380px;
+    height: 30px;
+    float: right;
+    position: relative;
+}
+
+.orgInfo > .orgTop > .search > .searchIpt {
+    width: 100%;
+    height: 30px;
+    color: #5B9696;
+    border: 1px solid #5B9696;
+    background: #0F1618;
+    border-radius: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.orgInfo > .orgTop > .search > .searchIpt::-webkit-input-placeholder {
+    color: #5B9696;
+}
+
+.orgInfo > .orgTop > .search > .searchIcon {
+    width: 22px;
+    height: 22px;
+    background: url('/resource/img/search.png') no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+}
+
+.orgInfo > .orgCont {
+    width: 100%;
+    height: 770px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.orgInfo > .orgCont > .orgItem {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    /*background: blue;*/
+}
+
+.orgInfo > .orgCont > .orgItem > .orgAll {
+    width: 30px;
+    height: 100%;
+    background: #1a2a2e;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgAll > .orgChoose {
+    width: 15px;
+    height: 15px;
+    background: #ee9f3a;
+    margin-top: 7px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgAll > .orgChoose > .orgIpt {
+    width: 15px;
+    height: 15px;
+    border:0;
+    outline:0;
+    opacity: 0;
+}
+.orgInfo > .orgCont > .orgItem > .orgRight {
+    width: 1310px;
+    height: 100%;
+    background: #ee9f3a;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgRight > .orgTitle {
+    width: 100px;
+    height: 100%;
+    color: #fff;
+    line-height: 30px;
+    margin-left: 10px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgRight > .orgRight_btn {
+    width: 140px;
+    height: 100%;
+    float: right;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgRight > .orgRight_btn > .orgBtn_del {
+    width: 22px;
+    height: 22px;
+    background: url('/resource/img/delete.png') no-repeat;
+    margin-top: 5px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgRight > .orgRight_btn > .orgBtn_arrow {
+    width: 15px;
+    height: 15px;
+    background: url('/resource/img/icons.png');
+    background-position: 36px 232px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail {
+    width: 1310px;
+    height: 500px;
+    margin-left: 30px;
+    position: absolute;
+    top: 30px;
+    display: flex;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight {
+    width: 600px;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in {
+    width: 100%;
+    height: 470px;
+    margin-top: 15px;
+    border-right: 1px solid #0E1819;
+    box-sizing: border-box;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner {
+    width: 585px;
+    height: 100%;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detailName {
+    width: 100%;
+    height: 30px;
+
+    margin-bottom: 20px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detailR_name {
+    width: 100%;
+    height: 30px;
+    display: flex;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detailName > .name_title {
+    width: 80px;
+    height: 30px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detailName > .nameIpt {
+    width: 505px;
+    height: 100%;
+    background: #DCE8F7;
+    float: left;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .referral {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .referral > .referral_title {
+    width: 80px;
+    height: 60px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .referral > .referralCont {
+    height: 100%;
+    width: 505px;
+    outline: none;
+    resize: none;
+    border: none;
+    float: left;
+    background: #DCE8F7;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detail_dress {
+    width: 320px;
+    height: 30px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detail_dress > .dress_title {
+    width: 80px;
+    height: 30px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .detail_dress > .dress_ipt {
+    width: 240px;
+    height: 100%;
+    outline: none;
+    border: none;
+    float: left;
+    background: #DCE8F7;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .longitude_latitude {
+    width: 260px;
+    height: 30px;
+    float: right;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .longitude_latitude > .same {
+    width: 130px;
+    height: 100%;
+    float: left;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .longitude_latitude > .same > .sameTitle {
+    width: 60px;
+    height: 100%;
+    float: left;
+    line-height: 30px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .longitude_latitude > .same > .sameIpt {
+    width: 70px;
+    height: 100%;
+    float: left;
+    outline: none;
+    border: none;
+    background: #DCE8F7;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailRight > .detailR_in > .detailR_inner > .bottom {
+    width: 100%;
+    height: 290px;
+    background: #5B595B;
+    margin-top: 70px;
+}
+
+/*详细内容左侧*/
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft {
+    flex: 1;
+    height: 100%;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in {
+    width: 690px;
+    height: 470px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #528787;
+    box-sizing: border-box;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn {
+    width: 330px;
+    height: 30px;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn > .choice {
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+    margin-right: 10px;
+    float: left;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn > .choice > .choiceIpt {
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    opacity: 0;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn > .addOn {
+    width: 140px;
+    height: 30px;
+    /*background: #EE9F3A;*/
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #5B9696;
+    box-sizing: border-box;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn > .addOn:hover {
+    /*background: #EE9F3A;*/
+    border: 1px solid #EE9F3A;
+    color: #EE9F3A;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn .sameBtn {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #5B9696;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inBtn .sameBtn:hover {
+    /*background: #EE9F3A;*/
+    border: 1px solid #EE9F3A;
+    color: #EE9F3A;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inSearch {
+    width: 200px;
+    height: 30px;
+    float: right;
+    position: relative;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inSearch > .inSearchIpt {
+    width: 100%;
+    height: 30px;
+    color: #5B9696;
+    border: 1px solid #5B9696;
+    background: #0F1618;
+    border-radius: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inSearch > .inSearchIpt::-webkit-input-placeholder {
+    color: #5B9696;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .left_inTop > .inSearch > .inSearchIcon {
+    width: 22px;
+    height: 22px;
+    background: url('/resource/img/search.png') no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department > .leftChoose {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #5B9696;
+    box-sizing: border-box;
+    margin-right: 15px;
+    float: left;
+    margin-top: 23px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department > .leftChoose > .leftChoose_ipt {
+    width: 15px;
+    height: 15px;
+    /*opacity: 0;*/
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department > .departIpt {
+    width: 140px;
+    height: 60px;
+    background: #DCE8F7;
+    outline: none;
+    border: none;
+    float: left;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department > .line {
+    width: 20px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    font-size: 30px;
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department > .departText {
+    width: 440px;
+    height: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    float: left;
+    background: #DCE8F7;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+
+.orgInfo > .orgCont > .orgItem > .orgDetail > .detailLeft > .left_in > .department > .deleteItem {
+    width: 15px;
+    height: 15px;
+    background: url('/resource/img/icons.png') -41px -95px no-repeat;
+    float: left;
+    position: absolute;
+    right: 22px;
+    top: 18px;
+    cursor: pointer;
+}

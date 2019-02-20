@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>app</title>
+    <script src="/resource/lib/jQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        (function PageResize() {
+            (function GetSize() {
+                var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                width > 1920 ? width = width : null;
+                width < 320 ? width = 320 : null;
+                document.documentElement.style.fontSize = (width * (100 / 375)) + "px";
+                if (!window.onresize) {
+                    window.onresize = function() {
+                        onFooEndFunc(GetSize);
+                    }
+                }
+            })();
+            //延迟运行计算
+            var executionTimer;
+            var onFooEndFunc = function(fn) {
+                // 根据实际情况可调整延时时间
+                var delay = 300;
+                if (!!executionTimer) {
+                    clearTimeout(executionTimer);
+                }
+                //这里延时执行你的函数
+                executionTimer = setTimeout(function() {
+                    fn();
+                }, delay);
+            };
+        })();
+    </script>
+</head>
+<body>
+<module entry="main"/>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./main/launcher/electron",
+  "scripts": {
+    "electron": "electron .",
+    "web": "node main/launcher/web"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajax-request": "^1.2.3",
+    "cooperation": "^1.0.15",
+    "sync-request": "^6.0.0",
+    "ws": "^6.1.3"
+  }
+}

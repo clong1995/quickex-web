@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="/resource/style/public.css">
+    <script>
+        // 重命名 Electron 提供的 require
+        window.nodeRequire = require;
+        // delete window.require;
+        // delete window.exports;
+        delete window.module;
+    </script>
+    <script src="/resource/script/config.js"></script>
+    <script src="/resource/lib/cooperate/Base.class.js"></script>
+    <script src="/resource/lib/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="/resource/script/shim.js"></script>
+</head>
+<body class="mainPage">
+<!--公共模块-->
+<module entry="navbar" scope="global" class="p_dot"/>
+<module entry="background" scope="global"/>
+
+<div class="p_content p_dot">
+
+    <!--模块-->
+
+    <module entry="left" class="left"/>
+
+    <div class="right">
+
+        <!-- 基础配置-->
+        <module entry="base" class="tab base"/>
+        <!-- 基础配置-->
+
+        <!-- 添加展厅-->
+        <module entry="base-window" class="tab hide base-window  fixed"/>
+        <!-- 添加展厅-->
+
+        <!--  设备配置-->
+        <module entry="device" class="tab device hide fadeInRight"/>
+        <!--  设备配置-->
+
+        <!-- 添加设备配置弹框-->
+        <module entry="device-window" class="tab device-window fixed  hide"/>
+        <!-- 添加配置弹框-->
+
+
+        <!--  展厅详细配置-->
+
+        <div class="config tab fixed hide" id="config">
+            <div class="config_model">
+                <module entry="config-top" class="config-top"/>
+                <div class="main">
+                    <module entry="config-left" class="config-left"/>
+                    <module entry="config-center" class="config-center"/>
+                    <module entry="config-right" class="config-right"/>
+                </div>
+            </div>
+        </div>
+        <!--  展厅详细配置-->
+
+    </div>
+
+</div>
+<!--模块-->
+</body>
+</html>

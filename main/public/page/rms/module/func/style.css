@@ -1,0 +1,160 @@
+.role-content {
+    margin: 15px 20px;
+    display: flex;
+}
+
+.role-content > .role-btn {
+
+    flex: 1;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #568E8E;
+    background: #152425;
+    cursor: pointer;
+}
+
+.role-content > .role-btn:hover {
+    border: 1px solid #EE9F3A;
+    color: #EE9F3A;
+}
+
+.role-content > .role-btn.active {
+    border-color: #EE9F3A;
+    color: #EE9F3A;
+}
+
+.func-content {
+    margin: 10px 20px;
+    height: 36px;
+}
+
+.func-content > .btn {
+    float: left;
+    width: 60px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #568E8E;
+    background: #152425;
+    cursor: pointer;
+}
+
+.func-content > .all {
+    margin-right: 50px;
+}
+
+.func-content > .start {
+
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.func-content > .clear {
+    border-radius: 0 5px 5px 0;
+}
+
+.func-content > .add {
+    float: right;
+    width: 186px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #568E8E;
+    background: #152425;
+    cursor: pointer;
+}
+
+.select-content {
+    /*margin: 15px 20px;*/
+    padding: 15px 0;
+}
+
+.select-content > .role-select-content:nth-child(2n) {
+    background: #152425;
+}
+
+.select-content > .role-select-content {
+    height: 98px;
+    position: relative;
+}
+
+.select-content > .role-select-content.active {
+    color: #EE9F3A;
+}
+
+.select-content > .role-select-content > .role-title {
+    padding-left: 45px;
+    height: 50px;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.select-content > .role-select-content > .role-title:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    width: 2px;
+    height: 30px;
+    background: #4C7D7E;
+    box-sizing: border-box;
+}
+
+.select-content > .role-select-content > .role-title > .txt {
+    font-size: 24px;
+}
+
+.select-content > .role-select-content > .role-title > .txt.active {
+    color: #FC9B07;
+}
+
+.select-content > .role-select-content > .role-title > .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("img/icon1.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 10px;
+    cursor: pointer;
+    vertical-align: text-top;
+}
+
+.select-content > .role-select-content > .role-title > .icon.active {
+    background: url("icon2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*二级权限*/
+.select-content > .role-select-content > .role-item-content {
+    padding-left: 140px;
+    height: 30px;
+}
+
+.select-content > .role-select-content > .role-item-content > .role-item {
+    display: inline-block;
+    height: 16px;
+}
+
+.select-content > .role-select-content > .role-item-content > .role-item > .txt {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.select-content > .role-select-content > .role-item-content > .role-item > .icon {
+    margin-right: 5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("img/icon1.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    vertical-align: text-top;
+}
+
+.select-content > .role-select-content > .role-item-content > .role-item > .icon.active {
+    background: url("img/icon2.png") no-repeat;
+    background-size: 100% 100%;
+}

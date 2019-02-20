@@ -1,0 +1,127 @@
+.add {
+    height: 165px;
+    width: 220px;
+    background: #162829;
+    border: 1px solid #325756;
+    margin: 4px 0 0 4px;
+    float: left;
+}
+
+.add > .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 42px;
+    text-align: center;
+    color: #325756;
+    margin: 40px 0 0 calc(50% - 27px);
+    float: left;
+    font-size: 40px;
+    border: 2px solid #325756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add > .text {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #325756;
+    float: left;
+    margin-top: 10px;
+}
+
+.left, .right {
+    height: 165px;
+    line-height: 165px;
+    text-align: center;
+    width: 30px;
+    color: #67bdbe;
+    border: 1px solid #325756;
+    background: #162829;
+    margin: 4px 0 0 4px;
+    cursor: pointer;
+    float: left;
+}
+
+.list {
+    height: 165px;
+    width: 1465px;
+    border: 1px solid #325756;
+    background: #162829;
+    float: left;
+    margin: 4px 0 0 4px;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+}
+
+.list::-webkit-scrollbar {
+    height: 1px;
+}
+
+
+.list > .roll {
+    height: 165px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+
+.list > .roll > .item {
+    height: 155px;
+    width: 220px;
+    background: #162829;
+    border: 1px solid #325756;
+    margin: 4px 5px 0 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.list > .roll > .item >.del{
+    background: #11100b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 22px;
+    display: none;
+    position: absolute;
+    top:-5px;
+    right: -5px;
+    border: 1px solid #9e7032;
+    color: #EF9F26;
+}
+.list > .roll > .item > .litimg {
+    margin: 10px 1px 0 1px;
+    width: 218px;
+    height: 120px;
+    float: left;
+}
+
+.list > .roll > .item > .text {
+    width: 220px;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    text-align: center;
+    color: #67bdbe;
+}
+
+.list > .roll > .item:hover,
+.list > .roll > .item.active {
+    border: 1px solid #9e7032;
+    background: #11100b;
+}
+
+.list > .roll > .item:hover > .text,
+.list > .roll > .item.active > .text {
+    color: #EF9F26;
+}
+.list > .roll > .item:hover  >.del,
+.list > .roll > .item.active >.del{
+    display: block;
+}

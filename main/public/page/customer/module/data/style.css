@@ -1,0 +1,249 @@
+.dataModel {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.dataModel input::-webkit-input-placeholder,
+.dataModel textarea::-webkit-input-placeholder {
+  color: #DCE8F7;
+}
+.dataModel .left_menu {
+  float: left;
+}
+.dataModel .left_menu > div {
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.dataModel .right_menu {
+  float: right;
+}
+.dataModel .right_menu .selectModel {
+  float: left;
+  width: 134px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: rgba(91, 150, 150, 0.1);
+  border: 1px solid #5B9696;
+  cursor: pointer;
+}
+.dataModel .right_menu .selectTitle {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 13px;
+}
+.dataModel .right_menu .search,
+.dataModel .right_menu .selectModel {
+  float: left;
+}
+.dataModel .right_menu .search {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+.dataModel .right_menu .search > input {
+  border-radius: 0;
+}
+.dataModel .top_menu {
+  height: 30px;
+  padding: 0 0 0 0;
+}
+.dataModel .top_menu > .search {
+  float: right;
+}
+.dataModel .add_btn {
+  position: relative;
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ee9f3a;
+  border: 1px solid #f3c080;
+  font-size: 14px;
+  color: #0E1819;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.dataModel .add_btn:after {
+  content: "+";
+  position: absolute;
+  left: 10px;
+  top: -2px;
+  font-size: 20px;
+  color: #0F1314;
+}
+.dataModel .del_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #f3c080;
+  border-left: none;
+  font-size: 14px;
+  color: #f3c080;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.dataModel .save_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #f3c080;
+  border-left: none;
+  font-size: 14px;
+  color: #f3c080;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.dataModel .i_search {
+  position: absolute;
+  cursor: pointer;
+  background: url('search.png') no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.dataModel .i_search:hover {
+  background-image: url('search_h.png');
+}
+.dataModel .search {
+  position: relative;
+  width: 380px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #568E8E;
+}
+.dataModel .search > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+  color: #568E8E;
+}
+.dataModel .search .i_search {
+  right: 14px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+}
+.dataModel .tableModel {
+  margin: 20px 0 0 0;
+  height: 782px;
+}
+.dataModel .tableModel .table_head {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-bottom: 2px solid #648787;
+}
+.dataModel .tableModel .table_head > .table_item {
+  flex: 1;
+}
+.dataModel .tableModel .select_btn {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #648787;
+  box-sizing: border-box;
+  margin: 0 40px 0 0;
+  cursor: pointer;
+}
+.dataModel .tableModel .select_btn.active {
+  background: #EE9F3A;
+  border-color: #ffcb00;
+}
+.dataModel .tableModel .table_th {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 2;
+  cursor: pointer;
+}
+.dataModel .tableModel .table_th:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 52px;
+  width: 1351px;
+  height: 100%;
+  border-bottom: 1px solid #648787;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.dataModel .tableModel .table_th * {
+  z-index: 2;
+}
+.dataModel .tableModel .table_th > .table_item {
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+}
+.dataModel .tableModel .table_th .select_btn.active ~ .table_item {
+  color: #EE9F3A;
+}
+.dataModel .tableModel .do_ul {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+.dataModel .tableModel .do_ul > li {
+  display: inline-block;
+  height: 100%;
+  margin: 0 5px;
+  line-height: 40px;
+}
+.dataModel .tableModel .table_body {
+  position: relative;
+}
+.dataModel .tableModel .table_no_data {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 316px;
+}
+.dataModel .tableModel .table_no_data > img {
+  width: 200px;
+  display: block;
+}
+.dataModel .tableModel .table_no_data > .tips {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+}
+.dataModel .tableModel .table_no_data > .tips > a {
+  color: #EE9F3A;
+}
+.dataModel .tableModel .table_foot {
+  display: flex;
+  margin: 35px 0 0 0;
+  justify-content: flex-end;
+}
+.dataModel .tableModel .pagination {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.dataModel .tableModel .pagination > li {
+  width: 32px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  border: 1px solid #648787;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.dataModel .tableModel .pagination .pageNum {
+  width: 40px;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

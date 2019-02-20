@@ -1,0 +1,92 @@
+<div class='searchBox'>
+    <input class="search" type="text" placeholder="账号/邮箱/姓名/ID">
+    <div class="btn">搜索</div>
+</div>
+<div class='title'>
+    <span class='select-btn'></span>
+    所有联系人
+    <div class="btn add"><span>+</span>添加</div>
+</div>
+<ul class='list-content'>
+    <!--<li class='list'>
+        <div class='list-title'>
+            <span class='select-btn'></span><span class='txt'>chenglong1@chickex.com.cn</span><span class='icon'></span>
+        </div>
+    </li>-->
+</ul>
+<div class='bottom'>
+    <div class='btn res'>重置密码</div>
+    <div class='btn del'>删除</div>
+    <div class='btn stop'>停用</div>
+</div>
+
+
+<!--添加用户框-->
+<div class='cover add-wrap hide'>
+    <div class='add-content'>
+        <div class='title'>添加新账号</div>
+        <div class='text-error'>请输入用户指定的电子邮箱地址</div>
+        <div class='input'><input class='username' type="text"></div>
+
+        <div class='btn-content'>
+            <div class='btn cancel'>取消</div>
+            <div class='btn sure'>添加</div>
+        </div>
+    </div>
+</div>
+
+
+<!--添加成功提示框-->
+<div class='success-wrap hide success'>
+    <div class='success-content'>
+        <div class='icon'><img src="img/ok.png" alt=""></div>
+        <div class='title'>添加成功！</div>
+        <div class='text-error'>您可以在账号列表中找到TA</div>
+    </div>
+</div>
+
+
+<!--添加失败提示框-->
+
+<div class='success-wrap hide failed'>
+    <div class='success-content'>
+        <div class='icon'><img src="img/no.png" alt=""></div>
+        <div class='title'>添加失败！</div>
+        <div class='text-error'>该账号已注册或电子邮箱地址不合规，请确认后重试。</div>
+    </div>
+</div>
+
+
+<!--重置密码-->
+<div class='cover res-wrap hide'>
+    <div class='res-password'>
+        <div class='title'>重置密码邮件已发送</div>
+        <div class='text'>已发送邮件至相关联系人的电子邮箱地址中，用户可自行通过重置邮件完成操作。</div>
+        <div class='btn'>我知道了</div>
+    </div>
+</div>
+
+<!--删除联系人-->
+<div class='modal-wrap hide del-user'>
+    <div class='content'>
+        <div class='title'>删除联系人</div>
+        <div class='text'>您所选的联系人将失去使用权限，并且从您的联系人列表中被清除，请问您确认要进行删除吗？</div>
+        <div class='btns-content'>
+            <div class='btn cancel'>取消</div>
+            <div class='btn sure'>确认并删除</div>
+        </div>
+    </div>
+</div>
+
+
+<!--停止授权-->
+<div class='modal-wrap hide stop-warrant'>
+    <div class='content'>
+        <div class='title'>停止使用所有被授权功能</div>
+        <div class='text'>您所选的联系人将失去全部被授权功能的使用权限，请问您确认要将账号停用吗？，用户可自行通过重置邮件完成操作。</div>
+        <div class='btns-content'>
+            <div class='btn cancel'>取消</div>
+            <div class='btn sure'>确认并停用</div>
+        </div>
+    </div>
+</div>

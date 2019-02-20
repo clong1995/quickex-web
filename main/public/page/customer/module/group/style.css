@@ -1,0 +1,336 @@
+.tab_module {
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.tab_module input::-webkit-input-placeholder,
+.tab_module textarea::-webkit-input-placeholder {
+  color: #DCE8F7;
+}
+.tab_module .left_menu {
+  float: left;
+}
+.tab_module .left_menu > div {
+  float: left;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.tab_module .top_menu {
+  height: 30px;
+}
+.tab_module .top_menu > .search {
+  float: right;
+}
+.tab_module .add_btn {
+  position: relative;
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ee9f3a;
+  border: 1px solid #f3c080;
+  font-size: 14px;
+  color: #0E1819;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.tab_module .add_btn:after {
+  content: "+";
+  position: absolute;
+  left: 10px;
+  top: -2px;
+  font-size: 20px;
+  color: #0F1314;
+}
+.tab_module .del_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #f3c080;
+  border-left: none;
+  font-size: 14px;
+  color: #f3c080;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.tab_module .save_btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #f3c080;
+  border-left: none;
+  font-size: 14px;
+  color: #f3c080;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.tab_module .i_search {
+  position: absolute;
+  cursor: pointer;
+  background: url('search.png') no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.tab_module .i_search:hover {
+  background-image: url('search_h.png');
+}
+.tab_module .search {
+  float: left;
+  position: relative;
+  width: 380px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #568E8E;
+}
+.tab_module .search > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+  color: #568E8E;
+}
+.tab_module .search .i_search {
+  right: 14px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+}
+.tab_module .i_select {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #5B9696;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.tab_module .item {
+  width: 1370px;
+  padding: 0 0 0 33px;
+}
+.tab_module .item .item_title {
+  position: relative;
+  margin: 20px 0 0 0;
+  height: 30px;
+}
+.tab_module .item .i_select {
+  float: left;
+  margin-left: -33px;
+}
+.tab_module .item .i_select.active {
+  background: #EE9F3A;
+  border: none;
+}
+.tab_module .item .i_select.active ~ .item_name {
+  background: #EE9F3A;
+  border: 1px solid #AE9471;
+  color: #FFFEFC;
+}
+.tab_module .item .i_select.active ~ .item_name .i_del {
+  background-image: url("del_h.png");
+}
+.tab_module .item .i_select.active ~ .item_name .i_toggle {
+  background-image: url("toggle_h.png");
+}
+.tab_module .item .item_name {
+  position: relative;
+  float: right;
+  width: 1370px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #5B9696;
+  padding: 0 0 0 10px;
+}
+.tab_module .item .item_name .i_del,
+.tab_module .item .item_name > .i_toggle {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+.tab_module .item .item_name > .i_del {
+  width: 15px;
+  height: 15px;
+  top: 6px;
+  right: 63px;
+  background: url("del.png") no-repeat center;
+  background-size: 100%;
+}
+.tab_module .item .item_name > .i_toggle {
+  width: 15px;
+  height: 15px;
+  top: 6px;
+  right: 27px;
+  background: url("toggle.png") no-repeat center;
+  background-size: 100%;
+}
+.tab_module .item .item_name > .i_toggle.active {
+  transform: rotate(180deg);
+}
+.tab_module .item .item_body {
+  height: 180px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #5B9696;
+  border-top: none;
+}
+.tab_module .item .item_body .list > div {
+  display: flex;
+  align-items: center;
+}
+.tab_module .item .item_body .list > div span {
+  width: 70px;
+  height: 17px;
+}
+.tab_module .item .item_body .tips {
+  font-size: 10px;
+  color: #568E8E;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.tab_module .item .item_body .list_1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #5B9696;
+  box-sizing: border-box;
+}
+.tab_module .item .item_body .list_1 .cover {
+  width: 240px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab_module .item .item_body .list_1 .cover > img {
+  width: 114px;
+  border-radius: 100%;
+}
+.tab_module .item .item_body .list_1 .cover .line {
+  position: absolute;
+  right: 0;
+  top: 27px;
+  width: 1px;
+  height: 70%;
+  background-color: #0E1819;
+}
+.tab_module .item .item_body .list_1 .cover .tips {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin: 0 auto;
+  font-size: 10px;
+}
+.tab_module .item .item_body .list_1 .cover .tips > a {
+  color: #EE9F3A;
+  font-size: 10px;
+}
+.tab_module .item .item_body .list_1 .info {
+  box-sizing: border-box;
+  margin: 0 0 0 30px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tab_module .item .item_body .list_1 .info > div {
+  display: flex;
+  align-items: flex-start;
+}
+.tab_module .item .item_body .list_1 .title input {
+  height: 30px;
+  border: 1px solid #568E8E;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  color: #DCE8F7;
+  background: #647178;
+  font-size: 12px;
+}
+.tab_module .item .item_body .list_1 .title .info_i {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 0 0 0 10px;
+}
+.tab_module .item .item_body .list_1 .title .info_i_1 {
+  padding: 0;
+}
+.tab_module .item .item_body .list_1 .title .info_i_1 input {
+  width: 300px;
+}
+.tab_module .item .item_body .list_1 .title .info_i_2 input {
+  width: 160px;
+}
+.tab_module .item .item_body .list_1 .title .info_i_3 input {
+  width: 250px;
+}
+.tab_module .item .item_body .list_1 .intro {
+  margin: 20px 0 0 0;
+}
+.tab_module .item .item_body .list_1 .intro textarea {
+  width: 870px;
+  height: 80px;
+  padding: 0 0 0 10px;
+  resize: none;
+  background: #647178;
+  border: 1px solid #568E8E;
+  color: #DCE8F7;
+  box-sizing: border-box;
+}
+.tab_module .item .item_body .list_1 .save {
+  width: 35px;
+  height: 35px;
+  margin-left: 66px;
+  cursor: pointer;
+  background: url("save.png") no-repeat center;
+  background-size: 100%;
+}
+.tab_module .item .item_body .list_1 .save:hover {
+  background-image: url("save_h.png");
+}
+.tab_module .tab_module_main {
+  height: calc(100% - 115px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.tab_module .tab_module_foot {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+  height: 30px;
+}
+.tab_module .tab_module_foot .pagination {
+  list-style: none;
+  height: 30px;
+  width: 300px;
+  float: right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.tab_module .tab_module_foot .pagination > li {
+  width: 30px;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.tab_module .tab_module_foot .pagination .prev,
+.tab_module .tab_module_foot .pagination .next {
+  border: 1px solid #5B9696;
+  position: absolute;
+  top: 0;
+}
+.tab_module .tab_module_foot .pagination .prev {
+  left: 0;
+}
+.tab_module .tab_module_foot .pagination .next {
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

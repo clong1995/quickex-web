@@ -1,0 +1,119 @@
+.main_left {
+  height: 100%;
+  width: 360px;
+  background-color: #13181b;
+}
+.main_left .btn {
+  border: 1px solid #569C9C;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.main_left .exhibition_info {
+  width: 100%;
+  height: 100%;
+}
+.main_left .exhibition_info > .name {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid #648787;
+  box-sizing: border-box;
+  background-color: #18292d;
+}
+.main_left .exhibition_info .infos {
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main_left .exhibition_info .infos textarea::-webkit-input-placeholder {
+  color: #648787;
+}
+.main_left .exhibition_info .infos input[type="text"],
+.main_left .exhibition_info .infos input[type="number"],
+.main_left .exhibition_info .infos input[type="password"] {
+  background-color: transparent;
+  border: 1px solid #000;
+  outline: none;
+}
+.main_left .exhibition_info .infos input::-webkit-outer-spin-button,
+.main_left .exhibition_info .infos input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+.main_left .exhibition_info .infos input::-webkit-input-placeholder {
+  color: #648787;
+}
+.main_left .exhibition_info .info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 30px;
+  line-height: 30px;
+  margin: 15px 0;
+}
+.main_left .exhibition_info .info:nth-child(5) {
+  height: 120px;
+}
+.main_left .exhibition_info .info:nth-child(5) .area {
+  height: 100%;
+  padding: 0;
+}
+.main_left .exhibition_info .info > div {
+  height: 30px;
+}
+.main_left .exhibition_info .info > .name {
+  flex: 1;
+  margin: 0 15px 0 0;
+}
+.main_left .exhibition_info .info > .area {
+  position: relative;
+  width: 240px;
+  border: 1px solid #648787;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #0e1819;
+  padding: 0 0 0 10px;
+}
+.main_left .exhibition_info .info > .area > input {
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  border: none;
+  color: #648787;
+}
+.main_left .exhibition_info .info > .area > .img_block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+  padding: 20px;
+}
+.main_left .exhibition_info .info > .area > .img_block > img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+.main_left .exhibition_info .info > .area .tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

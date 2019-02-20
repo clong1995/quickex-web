@@ -1,0 +1,97 @@
+.title {
+    color: #66BCBD;
+    font-weight: bold;
+    overflow: hidden;
+    height: 180px;
+    line-height: 180px;
+}
+
+.title > .logo {
+    font-size: 32px;
+    font-weight: bold;
+    float: left;
+    margin-left: 80px;
+}
+
+.title > .name {
+    font-weight: normal;
+    font-size: 24px;
+    float: left;
+    margin-left: 10px;
+}
+
+.loginBox > input,
+.registerBox > input {
+    border: 1px solid #395C66;
+    background: #0E1819;
+    height: 35px;
+    width: 255px;
+    text-indent: 14px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    float: left;
+    border-radius: 5px;
+    color:#fff;
+}
+
+.loginBox > .submit,
+.registerBox > .submit {
+    width: 255px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 75px;
+    float: left;
+    background: #EF9F26;
+    border: 1px solid #EF9F26;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.loginBox > .register,
+.registerBox > .login {
+    width: 255px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 75px;
+    float: left;
+    background: #5aafb0;
+    border: 1px solid #65BCBD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginBox>.download{
+    width: 255px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 100px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.loginBox>.download>.title{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+}
+.loginBox>.download>.item{
+    display: block;
+    width:25px;
+    height: 25px;
+    background-image: url("/resource/img/platform.png");
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+.loginBox>.download>.item.win{
+    background-position: -58px -1px;
+}
+.loginBox>.download>.item.mac{
+    background-position: -28px -1px;
+}
+.loginBox>.download>.item.linux{
+    background-position: 0 0;
+}

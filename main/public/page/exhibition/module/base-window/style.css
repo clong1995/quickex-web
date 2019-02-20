@@ -1,0 +1,191 @@
+.base_window_model {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #000;
+}
+.base_window_model .clear_fix {
+  zoom: 1;
+}
+.base_window_model .clear_fix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.base_window_model .btns {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: max-content;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.base_window_model .btns.btns_flex {
+  display: flex;
+}
+.base_window_model .btns .btn {
+  border: 1px solid #648787;
+  background-color: #0e1819;
+  width: 100px;
+  height: 100%;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.base_window_model .btns .btn.btn_yellow {
+  background-color: #ef9f26;
+  color: #000;
+}
+.base_window_model .need:after {
+  content: "*";
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  width: 5px;
+  height: 5px;
+  font-size: 22px;
+  color: #ef9f26;
+}
+.base_window_model .window_main {
+  position: absolute;
+  width: 501px;
+  height: 757px;
+  top: 157px;
+  left: 714px;
+  background: #18292d;
+}
+.base_window_model .window_main textarea::-webkit-input-placeholder {
+  color: #648787;
+}
+.base_window_model .window_main input[type="text"],
+.base_window_model .window_main input[type="number"],
+.base_window_model .window_main input[type="password"] {
+  background-color: transparent;
+  border: 1px solid #000;
+  outline: none;
+}
+.base_window_model .window_main input::-webkit-outer-spin-button,
+.base_window_model .window_main input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+.base_window_model .window_main input::-webkit-input-placeholder {
+  color: #648787;
+}
+.base_window_model .window_main .head {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  background-color: #ef9f26;
+}
+.base_window_model .window_main .body {
+  width: 436px;
+  margin: 20px auto 0 auto;
+}
+.base_window_model .window_main .body .title {
+  position: relative;
+  height: 20px;
+  width: 100%;
+}
+.base_window_model .window_main .body .title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #647878;
+}
+.base_window_model .window_main .infos_title {
+  color: #5fafaf;
+  font-size: 18px;
+  margin: 40px 0 30px 0;
+  border-bottom: 1px solid #648787;
+}
+.base_window_model .window_main .info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 35px;
+  line-height: 35px;
+  margin: 10px 0;
+}
+.base_window_model .window_main .info:nth-child(5) {
+  height: 230px;
+}
+.base_window_model .window_main .info:nth-child(5) .area {
+  height: 100%;
+  padding: 0;
+}
+.base_window_model .window_main .info > div {
+  height: 35px;
+}
+.base_window_model .window_main .info > .name {
+  flex: 1;
+  margin: 0 15px 0 0;
+}
+.base_window_model .window_main .info > .area {
+  position: relative;
+  width: 340px;
+  border: 1px solid #648787;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #0e1819;
+  padding: 0 0 0 10px;
+}
+.base_window_model .window_main .info > .area.error {
+  box-sizing: border-box;
+  border: 1px solid #f00;
+  color: #f00;
+}
+.base_window_model .window_main .info > .area > input {
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  border: none;
+  color: #648787;
+}
+.base_window_model .window_main .info > .area > .img_block {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+}
+.base_window_model .window_main .info > .area > .img_block > img {
+  display: block;
+  background-color: #630;
+  width: 50px;
+  height: 50px;
+}
+.base_window_model .window_main .info > .area > .img_block > .tip {
+  display: block;
+  margin: 0 auto;
+}
+.base_window_model .window_main .foot {
+  position: absolute;
+  bottom: 32px;
+  right: 14px;
+}
+.base_window_model .window_main .foot .btn {
+  margin: 0 20px;
+}
+/*# sourceMappingURL=style.css.map */

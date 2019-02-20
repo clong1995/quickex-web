@@ -1,0 +1,42 @@
+
+body{
+
+}
+#exhibition{
+    width: 320px;
+    height: 912px;
+    background: #18292d;
+    float: left;
+    margin-right: 10px;
+}
+#detail{
+    width: 1114px;
+    height: 912px;
+    background: #18292d;
+    float: left;
+}
+#map{
+    width: 320px;
+    height: 470px;
+    background: #18292d;
+    float: right;
+    position:relative;
+}
+.schedule{
+    width: 320px;
+    height: 50px;
+    background: red;
+    float: right;
+}
+#calendar{
+    width: 320px;
+    height: 340px;
+    background: #fff;
+    float: right;
+}
+.create{
+    width: 320px;
+    height: 50px;
+    background: green;
+    float: right;
+}

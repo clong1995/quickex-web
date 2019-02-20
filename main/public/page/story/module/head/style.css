@@ -1,0 +1,194 @@
+.back {
+    width: 30px;
+    height: 30px;
+    color: #ef9f26;
+    background-position: -115px 0;
+    float: left;
+    cursor: pointer;
+}
+
+.addChapter {
+    background: #ef9f26;
+    width: 140px;
+    height: 30px;
+    line-height: 33px;
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+    margin-left: 20px;
+}
+
+.addChapter > .p_icons {
+    width: 25px;
+    height: 25px;
+    background-position: 0 0;
+    display: inline-block;
+    margin: 1px 10px 0 10px;
+    float: left;
+}
+
+.left, .right {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #263437;
+    margin: 0 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.left {
+    background-position: -147px -2px;
+}
+
+.right {
+    background-position: -172px -2px;
+}
+
+.items {
+    position: relative;
+    width: 1230px;
+    height: 35px;
+    top: -5px;
+    overflow: hidden;
+    float: left;
+    overflow-x: auto;
+}
+
+.items::-webkit-scrollbar {
+    height: 1px;
+}
+
+
+.items > .roll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.items > .roll > .item {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #263437;
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.items > .roll > .item > .del {
+    display: none;
+    position: absolute;
+    right: -5px;
+    width: 22px;
+    height: 22px;
+    top: -5px;
+    background-position: -5px -93px;
+}
+
+.items > .roll > .item > .name {
+    width: 100%;
+    height: 25px;
+    display: block;
+    margin-top: 2px;
+    border: none;
+    background: transparent;
+    color: #63bdbd;
+    cursor: pointer;
+}
+
+
+.items > .roll > .item:hover,
+.items > .roll > .item.active {
+    border: 1px solid #ef9f26;
+    color: #ef9f26;
+}
+
+.items > .roll > .item:hover > .name,
+.items > .roll > .item.active > .name {
+    color: #ef9f26;
+}
+
+
+.items > .roll > .item > .name.edit {
+    color: #fff;
+    cursor: unset;
+}
+
+.items > .roll > .item:hover > .del,
+.items > .roll > .item.active > .del {
+    display: block;
+}
+
+.story {
+    border: 1px solid #263437;
+    color: #64bcbe;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 190px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.story > .selected {
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    float: left;
+}
+
+.story > .p_icons {
+    width: 28px;
+    height: 28px;
+    background-position: -230px -1px;
+    float: left;
+}
+
+.story > .listWrap {
+    cursor: default;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.story > .listWrap > .list {
+    width: 190px;
+    background: #162829;
+    position: absolute;
+    top: 37px;
+    right: 24px;
+    float: right;
+    border: 1px solid #325756;
+    box-sizing: border-box;
+    max-height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.story > .listWrap > .list > .item {
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid #325756;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+
+.story > .listWrap > .list > .item:hover{
+    color: #ef9f26;
+}

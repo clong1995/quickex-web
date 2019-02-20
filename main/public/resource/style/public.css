@@ -1,0 +1,141 @@
+html, body {
+    overflow: hidden;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background: url("/resource/img/gz.jpg");
+    color: #648787;
+    font-size: 14px;
+}
+
+
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #1a2a2e;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    background: #416a76;
+    border-radius: 10px;
+}
+
+.p_icons {
+    background: url("/resource/img/icons.png");
+}
+
+.p_checkBox,
+.p_checkBox_big {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #44526F;
+    margin-right: 2px;
+}
+
+.p_checkBox {
+    width: 14px;
+    height: 14px;
+}
+
+.p_checkBox_big {
+    width: 15px;
+    height: 15px;
+}
+
+.p_checkBox.checked,
+.p_checkBox_big.checked {
+    border: 1px solid #EE9F3A;
+}
+
+
+.p_checkBox.checked:before,
+.p_checkBox_big.checked:before {
+    content: "";
+    display: block;
+    background: #EE9F3A;
+}
+
+.p_checkBox.checked:before {
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+}
+
+.p_checkBox_big.checked:before {
+    width: 9px;
+    height: 9px;
+    margin: 2px;
+}
+
+
+/*线条和四角的点状装饰*/
+.p_dot {
+    position: relative;
+    border: 1px solid #2E3C3F;
+    border-top: 1px solid #2B4948;
+    border-bottom: 1px solid #2B4948;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.p_dot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% - 2px);
+    height: 3px;
+    left: -2px;
+    top: -2px;
+    border-left: 3px solid rgba(143, 254, 255,.35);
+    border-right: 3px solid rgba(139, 254, 255,.35);
+}
+.p_dot:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% - 2px);
+    height: 3px;
+    left: -2px;
+    bottom: -2px;
+    border-left: 3px solid rgba(138, 254, 255,.35);
+    border-right: 3px solid rgba(138, 254, 255,.35);
+}
+
+.p_cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.8);
+    z-index: 9;
+}
+.p_content{
+    height: 954px;
+    width: 1816px;
+    margin: 7px auto 0 auto;
+    padding: 20px;
+}
+#navbar{
+    height: 70px;
+    width: 1816px;
+    margin: 24px auto 0 auto;
+}
+#background{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left:0;
+}

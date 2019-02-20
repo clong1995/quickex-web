@@ -1,0 +1,40 @@
+.head {
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #223A3B;
+}
+.head .btn {
+  border: 1px solid #569C9C;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.head .name {
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+}
+.head .btn {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  top: 15px;
+  cursor: pointer;
+}
+.head .back {
+  width: 66px;
+  left: 30px;
+}
+.head .save {
+  width: 180px;
+  right: 260px;
+  color: #ef9f26;
+  border-color: #EF9F26;
+}
+.head .publish {
+  width: 180px;
+  right: 70px;
+}
+/*# sourceMappingURL=style.css.map */

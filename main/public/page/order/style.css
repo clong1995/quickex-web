@@ -1,0 +1,14 @@
+#floor {
+    width: 320px;
+    height: 912px;
+    background: #18292d;
+    float: left;
+    margin-right: 10px;
+}
+
+#list {
+    width: 1443px;
+    height: 912px;
+    float: right;
+    background: #18292d;
+}

@@ -1,0 +1,15 @@
+.li {
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.li.active {
+    color: #EE9F3A;
+    border-bottom: 2px solid #EE9F3A;
+}
+

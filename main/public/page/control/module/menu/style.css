@@ -1,0 +1,51 @@
+.title {
+    float: left;
+    height: 32px;
+    line-height: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.list {
+    height: 32px;
+    width: calc(100% - 390px);
+    float: left;
+}
+
+.list > .item {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #416a76;
+    cursor: pointer;
+}
+
+.list > .item:hover,
+.list > .item.active {
+    border: 1px solid #EE9F3A;
+    color: #EE9F3A;
+}
+
+.sync {
+    width: 165px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+}
+
+.sync > .hand {
+    float: left;
+    padding: 0 5px;
+    border-radius: 5px;
+    background: #253b42;
+    cursor: pointer;
+}
+
+.sync > .automate {
+    float: left;
+    margin-left: 20px;
+}

@@ -1,0 +1,46 @@
+.title {
+    width: 100%;
+    height: 46px;
+    padding: 5px 20px;
+}
+
+.title > .email {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    font-size: 38px;
+    color: #EE9F3A;
+}
+
+.title > .warrant {
+    float: left;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #6E6D6E;
+    border-radius: 19px;
+    color: #6E6D6E;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.menu {
+    margin: 0 20px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 1px solid #568E8E;
+}
+
+.menu > .menu-item {
+    float: left;
+    margin: -1px 10px;
+    cursor: pointer;
+}
+
+.menu > .menu-item.active {
+    border-bottom: 3px solid #EE9F3A;
+}

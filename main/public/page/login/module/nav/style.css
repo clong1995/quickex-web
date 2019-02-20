@@ -1,0 +1,18 @@
+.close {
+    float: right;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    background: #EE9F3A;
+    border-radius: 50%;
+    color: #b51717;
+    font-weight: bold;
+    margin: 25px 70px 0 0;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-app-region: no-drag
+}
+.close.noClose{
+    display: none;
+}

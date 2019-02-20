@@ -1,0 +1,153 @@
+.title {
+    background: #223940;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 1px solid #416a76;
+}
+
+.devList {
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 1px solid #416a76;
+    padding: 0 5px 5px 5px;
+}
+
+.devList > .devItem {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.devList > .devItem > .devTitle {
+    background: #152327;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #416a76;
+    box-sizing: border-box;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.devList > .devItem > .devTitle > .text {
+    float: left;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 40px;
+    line-height: 40px;
+}
+
+.devList > .devItem > .devTitle > .btn {
+    width: 50px;
+    height: 22px;
+    float: right;
+    margin-top: 9px;
+    cursor: pointer;
+    background-image: url("/resource/img/off.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.devList > .devItem > .devTitle > .btn.active {
+    background-image: url("/resource/img/on.png");
+}
+
+.devList > .devItem > .list {
+    width: 100%;
+    border: 1px solid #416a76;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+    display: none;
+}
+
+.devList > .devItem > .list > .item {
+    border-bottom: 1px solid #416a76;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.devList > .devItem > .list > .item > .title {
+    float: left;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+}
+
+.devList > .devItem > .list > .item > .icon {
+    float: right;
+    height: 20px;
+    margin: 9px 5px 0 0;
+    display: block;
+    width: 24px;
+}
+
+.devList > .devItem > .list > .item > input {
+    float: right;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.devList > .devItem > .list > .item > .btn {
+    float: right;
+    width: 45px;
+    height: 20px;
+    margin-top: 10px;
+    background-image: url("/resource/img/off.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.devList > .devItem > .list > .item > .btn.active {
+    background-image: url("/resource/img/on.png");
+}
+
+
+.devList > .devItem.active > .devTitle {
+    color: #6cb4ca;
+    background: #32464a;
+    cursor: default;
+}
+
+.devList > .devItem.active > .list {
+    display: block;
+}
+
+.general {
+    background: #223940;
+    width: 100%;
+    height: 83px;
+    box-sizing: border-box;
+    border: 1px solid #416a76;
+}
+
+.general > .item {
+    margin-top: 20px;
+    width: 110px;
+    float: left;;
+}
+
+.general > .item >.btn{
+    width: 55px;
+    margin-left: 30px;
+    height: 25px;
+    background-image: url("/resource/img/off.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.general > .item >.title{
+    width: 100%;
+    margin-top: 6px;
+    text-align: center;
+}

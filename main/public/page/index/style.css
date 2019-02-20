@@ -1,0 +1,104 @@
+body {
+    background: url("/resource/img/gz.jpg");
+    width: 1920px;
+    height: 1080px;
+}
+
+/*模块nav的总样式控制*/
+#nav {
+    height: 70px;
+    width: calc(100% - 104px);
+    float: left;
+    margin: 24px 0 0 2px;
+}
+
+/*模块main的总控*/
+#main {
+    height: calc(100% - 126px);
+    width: calc(100% - 104px);
+    float: left;
+    margin: 7px 0 0 2px;
+    padding: 20px;
+}
+
+/*其他样式*/
+.bg-left, .bg-right {
+    width: 50px;
+    height: calc(100% - 24px);
+    margin: 12px 0 0 0;
+}
+
+.bg-left {
+    float: left;
+}
+
+.bg-left > div {
+    background-image: url(/resource/img/border.png);
+    margin-left: 20px;
+}
+
+.bg-left > .top,
+.bg-left > .bottom {
+    height: 21px;
+    width: 28px;
+}
+
+.bg-left > .top {
+    background-position: 0 -41px;
+    background-repeat: no-repeat;
+}
+
+.bg-left > .bottom {
+    background-position: 0 -63px;
+    background-repeat: no-repeat;
+}
+
+.bg-left > .center {
+    background-repeat: repeat-y;
+    background-position: -61px 0;
+    height: calc(100% - 42px);
+    width: 22px;
+}
+
+.bg-right {
+    float: right;
+}
+
+.bg-right > div {
+    background-image: url(/resource/img/border.png);
+    margin-right: 20px;
+    float: right;
+}
+
+.bg-right > .top,
+.bg-right > .bottom {
+    height: 21px;
+    width: 28px;
+}
+
+.bg-right > .top {
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+}
+
+.bg-right > .bottom {
+    background-position: 1px -21px;
+    background-repeat: no-repeat;
+}
+
+.bg-right > .center {
+    background-repeat: repeat-y;
+    background-position: -40px 0;
+    height: calc(100% - 42px);
+    width: 22px;
+}
+
+
+/*TODO*/
+#tempEdit{
+    width: calc(100% - 50px * 2);
+    height: calc(100% - 23px * 2);
+    position: absolute;
+    top: 23px;
+    left: 50px;
+}

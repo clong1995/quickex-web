@@ -1,0 +1,71 @@
+/*其他样式*/
+.bg-left, .bg-right {
+    width: 50px;
+    height: calc(100% - 24px);
+    margin: 12px 0 0 0;
+}
+
+.bg-left {
+    float: left;
+}
+
+.bg-left > div {
+    background-image: url("/resource/img/border.png");
+    margin-left: 20px;
+}
+
+.bg-left > .top,
+.bg-left > .bottom {
+    height: 21px;
+    width: 28px;
+}
+
+.bg-left > .top {
+    background-position: 0 -41px;
+    background-repeat: no-repeat;
+}
+
+.bg-left > .bottom {
+    background-position: 0 -63px;
+    background-repeat: no-repeat;
+}
+
+.bg-left > .center {
+    background-repeat: repeat-y;
+    background-position: -61px 0;
+    height: calc(100% - 42px);
+    width: 22px;
+}
+
+.bg-right {
+    float: right;
+}
+
+.bg-right > div {
+    background-image: url("/resource/img/border.png");
+    margin-right: 20px;
+    float: right;
+}
+
+.bg-right > .top,
+.bg-right > .bottom {
+    height: 21px;
+    width: 28px;
+}
+
+.bg-right > .top {
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+}
+
+.bg-right > .bottom {
+    background-position: 1px -21px;
+    background-repeat: no-repeat;
+}
+
+.bg-right > .center {
+    background-repeat: repeat-y;
+    background-position: -40px 0;
+    height: calc(100% - 42px);
+    width: 22px;
+}

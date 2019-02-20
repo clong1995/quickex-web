@@ -1,0 +1,11 @@
+.content{
+    height: 1031px;
+    width: 1816px;
+    margin: 24px auto 0;
+    padding: 20px;
+}
+#qrcode{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+}

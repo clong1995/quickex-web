@@ -1,0 +1,143 @@
+.fake {
+    position: absolute;
+    top: 20px;
+    left: calc((100% - 700px) / 2);
+    overflow: hidden;
+    width: 700px;
+    height: 600px;
+    background: #293838;
+    border: 1px solid #325756;
+    z-index: 2;
+}
+
+
+.fake > .head {
+    width: 100%;
+    height: 70px;
+    color: #64bcbe;
+    overflow: hidden;
+    padding: 20px 0 0 15px;
+    box-sizing: border-box;
+}
+
+
+.fake > .head input {
+    height: 27px;
+    color: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #325756;
+}
+
+.fake > .head > .name {
+    float: left;
+    width: 181px;
+}
+
+.fake > .head > .time {
+    width: 176px;
+    height: 27px;
+    float: right;
+}
+
+.fake > .head > .time > .title {
+    float: left;
+    width: 70px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.fake > .head > .time > .value {
+    width: 90px;
+    height: 27px;
+    line-height: 27px;
+    float: left;
+}
+
+.fake > .head > .time > .value input {
+    width: 23px;
+    text-align: center;
+}
+
+.fake > .head > .ratio {
+    float: right;
+    width: 176px;
+    height: 27px;
+}
+
+.fake > .head > .ratio > .title {
+    float: left;
+    width: 60px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.fake > .head > .ratio > .value {
+    float: left;
+    width: 90px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.fake > .wrap {
+    width: 670px;
+    height: 377px;
+    border: none;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+}
+
+.fake > .foot {
+    width: 670px;
+    height: 100px;
+    background: transparent;
+    border: none;
+    color: #64bcbe;
+    margin: 15px 0 0 15px;
+    border-bottom: 1px solid #325756;
+    display: block;
+}
+
+
+.adorn {
+    z-index: 1;
+    opacity: .5;
+    width: 500px;
+    height: 470px;
+    top: 100px;
+}
+
+.fake.prev {
+    left: 10px;
+}
+
+.fake.next {
+    left: unset;
+    right: 10px;
+}
+
+.adorn > .head input {
+    border: none;
+}
+
+.adorn > .head > .name {
+    width: 150px;
+    height: 27px;
+}
+
+.adorn > .head > .time {
+    width: 160px;
+}
+
+.adorn > .head > .ratio {
+    width: 170px;
+}
+
+.adorn > .wrap {
+    width: 470px;
+    height: 264px;
+}
+.adorn > .foot {
+    width: 470px;
+    height: 90px;
+}

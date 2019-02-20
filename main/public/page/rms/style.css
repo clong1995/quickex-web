@@ -1,0 +1,93 @@
+#left {
+    width: 320px;
+    height: 912px;
+    background: #18292d;
+    float: left;
+    margin-right: 10px;
+}
+
+#head {
+    float: left;
+    width: 1443px;
+    height: 98px;
+    background: #18292d;
+}
+
+#func {
+    float: left;
+    width: 1443px;
+    height: 815px;
+    background: #18292d;
+}
+
+#data {
+    float: left;
+    width: 1443px;
+    height: 815px;
+    background: #18292d;
+}
+
+
+
+
+
+
+/*提示框*/
+
+.modal-wrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modal-wrap > .content {
+    margin: 280px auto;
+    width: 400px;
+    height: 240px;
+    border: 1px solid #426E6E;
+    background: #0E1819;
+}
+
+.modal-wrap > .content > .title {
+    margin: 25px 0;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #EE9F3A;
+}
+
+.modal-wrap > .content > .text {
+    margin: 40px 0 40px 0;
+    padding: 0px 25px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.modal-wrap > .content > .btns-content {
+    display: flex;
+}
+
+.modal-wrap > .content > .btns-content > .btn {
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #426E6E;
+    cursor: pointer;
+}
+
+.modal-wrap > .content > .btns-content > .sure {
+    border-right: 1px solid #426E6E;
+}
+
+.role-name{
+    color: #ffa200;
+}

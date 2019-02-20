@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="/resource/style/public.css">
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="/resource/script/config.js"></script>
+    <script src="/resource/lib/cooperate/Base.class.js"></script>
+    <script src="/resource/lib/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="/resource/script/shim.js"></script>
+    <script>
+        if (window.module)
+            module = window.module;
+    </script>
+</head>
+<body>
+<!--公共模块-->
+<module entry="navbar" scope="global" class="p_dot"/>
+<module entry="background" scope="global"/>
+<div class="p_content p_dot">
+    <!--模块-->
+    <module entry="left"/>
+    <module entry="head"/>
+    <module entry="func" class="hide"/>
+    <module entry="data"/>
+
+    <!--删除自定义模板-->
+    <div class='modal-wrap hide del-model'>
+        <div class='content'>
+            <div class='title'>删除自定义模板</div>
+            <div class='text'>您正在试图删除自定义创建的“<span class='role-name'>销售人员</span>”模板，删除后此权限的用户将无法使用其中的功能，您确认要删除吗？
+            </div>
+            <div class='btns-content'>
+                <div class='btn sure'>取消</div>
+                <div class='btn cancel'>确认并停用</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

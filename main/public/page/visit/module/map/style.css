@@ -1,0 +1,149 @@
+.right_wrap {
+    width: 290px;
+    height: 460px;
+    margin: 15px auto 0 auto;
+}
+
+
+.right_wrap .same_ipt.active {
+    border-color: #ef9f26 !important;
+}
+
+.right_wrap .same_ipt.active:before {
+    content: "√";
+    color: #ef9f26;
+}
+.right_wrap .same_ipt.going {
+    border-color: #b70e23 !important;
+}
+
+
+
+
+.right_wrap > .right_title {
+    width: 100%;
+    height: 30px;
+    color: #ef9f26;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.right_wrap > .gallery_info {
+    width: 100%;
+    height: 190px;
+}
+
+.right_wrap > .same_info > .same_title {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #243235;
+    color: #66bbbe;
+}
+
+.right_wrap > .gallery_info > .same_wrap {
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.right_wrap > .gallery_info > .same_wrap > .same_left {
+    width: 65px;
+    height: 100%;
+    color: #3d656f;
+    line-height: 30px;
+}
+
+.right_wrap > .gallery_info > .same_wrap > .same_content {
+    flex: 1;
+    color: #66bbbe;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.right_wrap > .gallery_info > .sameConfig {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+}
+
+.right_wrap > .gallery_info > .sameConfig > .sameConfig_title {
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    color: #3d656f;
+}
+
+.right_wrap > .gallery_info > .sameConfig > .sameConfig_cont {
+    flex: 1;
+    line-height: 30px;
+    color: #66bbbe;
+}
+
+.right_wrap > .cost_info {
+    width: 100%;
+    height: 110px;
+}
+
+.right_wrap > .cost_info > .cost_wrap {
+    width: 100%;
+    height: 90px;
+    line-height: 30px;
+    display: flex;
+}
+
+.right_wrap > .cost_info > .cost_wrap > .cost_norm {
+    width: 65px;
+    height: 30px;
+    color: #3d656f;
+}
+
+.right_wrap > .cost_info > .cost_wrap > .cost_num {
+    flex: 1;
+    line-height: 30px;
+    color: #66bbbe;
+}
+
+.right_wrap > .rent_wrap {
+    width: 100%;
+    height: 116px;
+}
+
+.right_wrap > .rent_wrap > .rent_choose {
+    width: 100%;
+    height: 86px;
+    margin-top: 10px;
+}
+
+.right_wrap > .rent_wrap > .rent_choose > .rent_item {
+    width: 80px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.right_wrap > .rent_wrap > .rent_choose > .rent_item > .rent_ipt {
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+    margin-top: 3px;
+    background: none;
+    outline: none;
+    border: 0;
+}
+
+.right_wrap > .rent_wrap > .rent_choose > .rent_item > .same_ipt {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #66bbbe;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+    line-height: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.right_wrap > .rent_wrap > .rent_choose > .rent_item > .same_label {
+    float: left;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="/resource/style/public.css">
+    <script src="/resource/script/config.js"></script>
+    <script src="/resource/lib/cooperate/Base.class.js"></script>
+    <script src="/resource/script/shim.js"></script>
+</head>
+<body>
+<!--左边的样式-->
+<div class="bg-left">
+    <div class="top"></div>
+    <div class="center"></div>
+    <div class="bottom"></div>
+</div>
+<!--右边的样式-->
+<div class="bg-right">
+    <div class="top"></div>
+    <div class="center"></div>
+    <div class="bottom"></div>
+</div>
+
+<!--模块-->
+<module entry="nav" class="p_dot"/>
+<module entry="main" class="p_dot"/>
+<!--模块-->
+
+<!--TODO 临时模块-->
+<module entry="tempEdit" class="hide"/>
+<!-- TODO -->
+<script>
+    function tempEdit(sid,n,w,h) {
+        let tempEdit = document.querySelector('#tempEdit');
+        let tempIfr = tempEdit.querySelector('.tempIfr');
+        tempIfr.src = 'http://127.0.0.1:8005/modules/editerHome/index.html?sid='+sid+'&n='+n+'&w='+w+'&h='+h;
+        tempEdit.setAttribute('class','');
+        //去掉导航兼容windows
+        document.querySelector('#nav').setAttribute('style','visibility: hidden')
+    }
+    //tempEdit(2,'测试测试',1920,1080);
+</script>
+</body>
+</html>
